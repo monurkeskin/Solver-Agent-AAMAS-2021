@@ -5,13 +5,10 @@ Mehmet Onur Keskin · Umut Çakan · Reyhan Aydoğan
 [Paper](https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
 
 [![Tests](https://github.com/monurkeskin/Solver-Agent-AAMAS-2021/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Solver-Agent-AAMAS-2021/actions/workflows/tests.yml)
-[![Software archive](https://zenodo.org/badge/DOI/10.5281/zenodo.22729008.svg)](https://doi.org/10.5281/zenodo.22729008)
-
-**How should a negotiating robot respond when a person's offers and emotional expressions tell different stories?**
 
 Solver brings emotional feedback into a negotiation strategy that already balances reciprocity and time pressure. Its key idea is **opponent awareness**: emotional signals influence the next offer according to how the human responds to the agent's changes in behavior.
 
-## The idea
+## Method
 
 The agent starts from the utility of its previous offer, follows recent changes in the human's offers, and adds an emotion contribution. The awareness coefficient balances these two influences. A quadratic time component increases the role of the approaching deadline.
 
@@ -28,22 +25,21 @@ flowchart LR
   I --> J
 ```
 
-## In the paper
+## Study and findings
 
 The AAMAS extended abstract introduces the Solver equation and explains the emotional and behavioral signals behind it. It is a compact method paper; the later [IVA 2025 study](https://github.com/monurkeskin/An-Adaptive-Emotion-Aware-Strategy-IVA-2025) develops and evaluates this line of work in a fuller experimental setting. [Read the paper](https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf).
 
-## Explore this work
+## What you can explore
 
 Work through the Solver equation, vary synthetic offer histories and inspect the resulting targets. The fruit example is a convenient demonstration domain; the short paper does not specify a complete original experiment configuration.
 
 | Explore | Start with | What it shows |
 | --- | --- | --- |
-| Equation checks | `reproduction/method.json` | Trace awareness, affect and reciprocal utility changes. |
-| Example session | `configs/synthetic.json` | Inspect bids, decisions and a readable local report. |
-| Historical scope | `METHOD.md` | Separate the published equation from later implementation choices. |
+| Equation checks | [reproduction/method.json](reproduction/method.json) | Trace awareness, affect and reciprocal utility changes. |
+| Example session | [configs/synthetic.json](configs/synthetic.json) | Inspect bids, decisions and a readable local report. |
+| Historical scope | [METHOD.md](METHOD.md) | Separate the published equation from later implementation choices. |
 
-This repository holds the paper-specific configurations, method checks and study
-guides. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
+The configurations, method checks and study guides are specific to this paper. The shared [NEGOTIATOR framework](https://github.com/monurkeskin/NEGOTIATOR-IJCAI-2024) runs the negotiation,
 participant/conductor views and session analysis. Its exact **2.0.0** revision is
 pinned in [framework.json](framework.json); installation brings it in automatically.
 
@@ -83,14 +79,12 @@ In **New study → Import a paper or study configuration**, select
 to inspect the paper's protocol template. The [study guide](docs/protocol.md)
 explains the remaining protocol/asset requirements and device setup.
 
-## Data and reproducibility
+## Data and analysis
 
-Participant-level records and audio/video recordings are **not distributed in this
-repository**. Restricted access is compatible with sharing the method, protocol and
-analysis code; it does not require releasing human-study data publicly. The package
-provides synthetic inputs and documents which computations can be run from them.
-Recomputing the published human-study statistics additionally requires authorized
-access to the relevant inputs and the corresponding analysis specification.
+Participant records and recordings are not included. The examples use labeled
+synthetic inputs so you can run the code and inspect its calculations. Recomputing
+the human-study results requires authorized access to the original inputs and
+the matching analysis procedure.
 
 [Reproducibility guide](REPRODUCIBILITY.md) · [Paper-to-code map](paper-map.json) ·
 [Analysis guide](docs/analysis.md)
