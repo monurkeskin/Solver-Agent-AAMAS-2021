@@ -6,28 +6,54 @@ Mehmet Onur Keskin · Umut Çakan · Reyhan Aydoğan
 
 [![Tests](https://github.com/monurkeskin/Solver-Agent-AAMAS-2021/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Solver-Agent-AAMAS-2021/actions/workflows/tests.yml)
 
-Solver brings emotional feedback into a negotiation strategy that already balances reciprocity and time pressure. Its key idea is **opponent awareness**: emotional signals influence the next offer according to how the human responds to the agent's changes in behavior.
+How should a negotiating robot respond when a person looks frustrated, but keeps
+making demanding offers? **Solver combines emotional feedback with evidence from
+the negotiation itself.** It gives facial-expression feedback more influence
+when the human's moves respond to changes in the agent's behavior.
 
-## Method
+## The idea: emotion, reciprocity and time
 
-The agent starts from the utility of its previous offer, follows recent changes in the human's offers, and adds an emotion contribution. The awareness coefficient balances these two influences. A quadratic time component increases the role of the approaching deadline.
+The AAMAS paper introduces the following behavior target (Equation 6):
 
-```mermaid
-flowchart LR
-  A[Recent human offers] --> B[Reciprocity]
-  C[Facial expression feedback] --> D[Emotion coefficient]
-  E[Response to agent moves] --> F[Awareness]
-  B --> G[Behavior target]
-  D --> G
-  F --> G
-  H[Elapsed time] --> I[Time target]
-  G --> J[Next offer]
-  I --> J
-```
+$$
+TU_{\mathrm{Behavior}} = U(O_j^{t-1}) + P_A^2 P_E - (1-P_A^2)\mu\Delta U
+$$
 
-## Study and findings
+The first term is the utility of the agent's previous offer. The other two terms
+decide how far to move from it: emotional feedback contributes through $P_E$,
+while recent concessions or demands contribute through $\Delta U$.
 
-The AAMAS extended abstract introduces the Solver equation and explains the emotional and behavioral signals behind it. It is a compact method paper; the later [IVA 2025 study](https://github.com/monurkeskin/An-Adaptive-Emotion-Aware-Strategy-IVA-2025) develops and evaluates this line of work in a fuller experimental setting. [Read the paper](https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf).
+| Signal | Meaning in the paper | Effect on the next target |
+| --- | --- | --- |
+| $P_E$ | Weighted categorical facial-expression feedback | Negative feedback encourages concession; positive feedback permits a higher demand. |
+| $P_A$ | How often the human changes move type when the agent changes its behavior | Its square weights emotion; the complementary weight controls reciprocity. |
+| $\Delta U$ | Weighted utility changes over recent human offers, evaluated by the agent | A concession by the human tends to be reciprocated. |
+| $\mu$ | Time-dependent degree of reciprocity | Scales the response to changes in offers. |
+
+The behavior target is then combined with a time-based concession curve
+(Equations 1–2):
+
+$$
+TU_{\mathrm{Hybrid}} = t^2 TU_{\mathrm{Times}} + (1-t^2)TU_{\mathrm{Behavior}}
+$$
+
+Early in a session, the interaction matters most. Near the deadline, the time
+component gains weight. These are the paper's equations; the short paper contains
+no research figures. [Equation sources](docs/paper/README.md).
+
+## From the equation to a working agent
+
+The [method example](reproduction/method.json) lets you follow the target calculation
+with small, inspectable inputs. Change awareness or affect while keeping the offer
+history fixed to see which term changes. [METHOD.md](METHOD.md) connects the
+published equations to the maintained `solver-2021` preset and explains the
+historical choices that the extended abstract leaves unspecified.
+
+The three-page paper reports preliminary evidence of higher agent scores without
+lower human scores, but does not supply a quantitative result table or a complete
+experiment specification. The later [IVA 2025 paper](https://github.com/monurkeskin/An-Adaptive-Emotion-Aware-Strategy-IVA-2025)
+develops the strategy and reports a fuller human–robot evaluation. Its results
+belong to that later study.
 
 ## What you can explore
 

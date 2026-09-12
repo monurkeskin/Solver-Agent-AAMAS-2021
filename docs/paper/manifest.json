@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "paper_url": "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf",
+  "pdf_sha256": "c15620f9b05c38c54ec96e62f42b8642f6cab453c83a6c08a9522d92f54ee81f",
+  "pdf_reference": "Publisher PDF",
+  "verification": "Compared with the cited paper PDF; page numbers count from its first page.",
+  "figures": []
+}
