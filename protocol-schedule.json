@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "paper_id": "solver-agent-2021",
+  "protocol_summary": "The three-page paper does not provide a complete recoverable participant protocol. The fruit configuration is a method demonstration.",
+  "historical_instruments_included": false,
+  "unknowns": [
+    "Exact historical experiment commit and full configuration",
+    "Original permitted participant records and analysis decisions",
+    "Original affect model and observation records"
+  ],
+  "required_before_human_use": "Resolve each missing evidence item and validate the local study protocol before starting.",
+  "analysis_unit": "participant",
+  "minimum_rounds_in_either_session": 0,
+  "round_definition": "Must be supplied from the historical record; do not equate rounds with individual offers.",
+  "questionnaires": "post_session",
+  "empirical_reproduction": "unavailable: original permitted inputs and analysis provenance are not included"
+}

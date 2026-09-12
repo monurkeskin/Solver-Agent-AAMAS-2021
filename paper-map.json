@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "repository": "solver-agent-2021",
+  "paper": {
+    "type": "conference-paper",
+    "title": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation",
+    "authors": [
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      },
+      {
+        "given-names": "Umut",
+        "family-names": "Çakan"
+      },
+      {
+        "given-names": "Reyhan",
+        "family-names": "Aydoğan"
+      }
+    ],
+    "year": 2021,
+    "url": "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf"
+  },
+  "selected_source": {
+    "entry": "aamas2021-updated-formatting-instructions/main.tex",
+    "scope": "Selected publication-aligned manuscript only. Working sources and reviewer correspondence are not distributed."
+  },
+  "framework": "framework.json",
+  "requirements": [
+    {
+      "id": "method-eq-hybrid",
+      "axis": "method",
+      "requirement": "eq-hybrid",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Hybrid.tex",
+          "sha256": "1dcefc0a365b1145b1b337b3c322c3908e03a7668b2aa4b3f45f7deefa3aff16",
+          "label": "eq-hybrid",
+          "line": 9,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-concession",
+      "axis": "method",
+      "requirement": "eq-concession",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Hybrid.tex",
+          "sha256": "1dcefc0a365b1145b1b337b3c322c3908e03a7668b2aa4b3f45f7deefa3aff16",
+          "label": "eq-concession",
+          "line": 16,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-targetutility",
+      "axis": "method",
+      "requirement": "eq-targetutility",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Hybrid.tex",
+          "sha256": "1dcefc0a365b1145b1b337b3c322c3908e03a7668b2aa4b3f45f7deefa3aff16",
+          "label": "eq-targetutility",
+          "line": 27,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-delta",
+      "axis": "method",
+      "requirement": "eq-delta",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Hybrid.tex",
+          "sha256": "1dcefc0a365b1145b1b337b3c322c3908e03a7668b2aa4b3f45f7deefa3aff16",
+          "label": "eq-delta",
+          "line": 29,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "Implemented maintained component; unreported constants, historical source choice or original assets prevent a claim of complete historical equivalence.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-mu",
+      "axis": "method",
+      "requirement": "eq-mu",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Hybrid.tex",
+          "sha256": "1dcefc0a365b1145b1b337b3c322c3908e03a7668b2aa4b3f45f7deefa3aff16",
+          "label": "eq-mu",
+          "line": 31,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "method-eq-solver",
+      "axis": "method",
+      "requirement": "eq-solver",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/solver.tex",
+          "sha256": "396593f4b6367cdc685044641700cb83941289ff40152688c0663587f1d292c8",
+          "label": "eq-solver",
+          "line": 10,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.strategies.policies",
+        "negotiator.strategies.agents"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_strategies.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/method.json",
+      "explanation": "The published arithmetic is implemented and independently checked. This claim concerns the equation, not recovery of the human experiment.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "protocol-schedule",
+      "axis": "protocol",
+      "requirement": "Practice, order, durations, breaks, instruments and condition identity",
+      "status": "partial",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/solver.tex",
+          "sha256": "396593f4b6367cdc685044641700cb83941289ff40152688c0663587f1d292c8",
+          "label": "sec-SolverAgent",
+          "line": 2,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "configs/",
+        "protocol-schedule.json",
+        "negotiator.application.protocol",
+        "negotiator.application.studies"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_protocol_contract.py"
+        },
+        {
+          "repository": "framework",
+          "path": "tests/test_study_protocols.py"
+        }
+      ],
+      "result_target": "configs/synthetic.json",
+      "explanation": "The three-page paper does not provide a complete recoverable participant protocol. The fruit configuration is a method demonstration. Missing original assets and instrument wording remain explicit preflight requirements.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "historical-outcomes",
+      "axis": "analysis",
+      "requirement": "Recompute the original participant results",
+      "status": "unverified",
+      "critical": true,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Conclusion.tex",
+          "sha256": "c775360af4d9cf760eddb30fff0c0aff2e4f9d9db1a2811aed3c867c248ec1cd",
+          "label": "sec-conclusion",
+          "line": 2,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "reproduction/published-results.json"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/published-results.json",
+      "explanation": "Original permitted inputs and historical analysis decisions are unavailable. The recipe returns an unavailable receipt and no numerical result.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "participant-analysis",
+      "axis": "analysis",
+      "requirement": "Participant unit, pairing, cohorts and missingness",
+      "status": "partial",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Conclusion.tex",
+          "sha256": "c775360af4d9cf760eddb30fff0c0aff2e4f9d9db1a2811aed3c867c248ec1cd",
+          "label": "sec-conclusion",
+          "line": 2,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "negotiator.reproduction.operations.paired_summary",
+        "reproduction/paired-example.json"
+      ],
+      "tests": [
+        {
+          "repository": "framework",
+          "path": "tests/test_reproduction.py"
+        },
+        {
+          "repository": "companion",
+          "path": "tests/test_reproduction_targets.py"
+        }
+      ],
+      "result_target": "reproduction/paired-example.json",
+      "explanation": "Tested generic paired analysis with explicit cohort/domain grouping and exclusions; synthetic input and modern percentile intervals do not reproduce the paper significance tests.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "independent-use",
+      "axis": "runnability",
+      "requirement": "Independent install, configuration, run and report",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/solver.tex",
+          "sha256": "396593f4b6367cdc685044641700cb83941289ff40152688c0663587f1d292c8",
+          "label": "sec-SolverAgent",
+          "line": 2,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "run.py",
+        "requirements.txt",
+        "framework.json"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_companion.py"
+        }
+      ],
+      "result_target": "configs/synthetic.json",
+      "explanation": "The supported hardware-free example runs in a clean environment using only the pinned engine. Robot operation requires separate lab validation.",
+      "documentation": "METHOD.md"
+    },
+    {
+      "id": "reader-paths",
+      "axis": "documentation",
+      "requirement": "First use, paper inspection, contribution and citation",
+      "status": "full",
+      "critical": false,
+      "sources": [
+        {
+          "entry": "aamas2021-updated-formatting-instructions/main.tex",
+          "file": "aamas2021-updated-formatting-instructions/latex/Hybrid.tex",
+          "sha256": "1dcefc0a365b1145b1b337b3c322c3908e03a7668b2aa4b3f45f7deefa3aff16",
+          "label": "eq-hybrid",
+          "line": 9,
+          "nearby_graphics": []
+        }
+      ],
+      "implementation": [
+        "README.md",
+        "METHOD.md",
+        "REPRODUCIBILITY.md",
+        "docs/"
+      ],
+      "tests": [
+        {
+          "repository": "companion",
+          "path": "tests/test_release_contract.py"
+        }
+      ],
+      "result_target": "reproduction/targets.json",
+      "explanation": "Executable example commands, method map, protocol limits and preferred paper citation are provided.",
+      "documentation": "METHOD.md"
+    }
+  ],
+  "interpretation": {
+    "full": "Evidence supports this scoped requirement, not the entire paper.",
+    "partial": "Some elements are implemented but unresolved method/protocol choices remain.",
+    "unverified": "Required original evidence is unavailable."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation — maintained code companion",
+  "version": "2.0.0",
+  "upload_type": "software",
+  "description": "Maintained research software for Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation. Reproducibility scope and source provenance are documented in the repository.",
+  "creators": [
+    {
+      "name": "Keskin, Mehmet Onur"
+    }
+  ],
+  "license": "GPL-3.0-only",
+  "related_identifiers": [
+    {
+      "identifier": "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "doi": "10.5281/zenodo.22729008"
+}

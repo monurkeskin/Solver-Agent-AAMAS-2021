@@ -1,0 +1,41 @@
+{
+  "id": "solver-agent-2021",
+  "bibtex_key": "solveragent2021",
+  "paper": {
+    "type": "conference-paper",
+    "title": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation",
+    "authors": [
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      },
+      {
+        "given-names": "Umut",
+        "family-names": "Çakan"
+      },
+      {
+        "given-names": "Reyhan",
+        "family-names": "Aydoğan"
+      }
+    ],
+    "year": 2021,
+    "url": "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf"
+  },
+  "software": {
+    "cff-version": "1.2.0",
+    "message": "Please cite the associated paper, and NEGOTIATOR for the framework. Record the software version used.",
+    "type": "software",
+    "title": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation — maintained code companion",
+    "authors": [
+      {
+        "given-names": "Mehmet Onur",
+        "family-names": "Keskin"
+      }
+    ],
+    "version": "2.0.0",
+    "date-released": "2026-09-12",
+    "license": "GPL-3.0-only",
+    "repository-code": "https://github.com/monurkeskin/solver-agent-2021",
+    "doi": "10.5281/zenodo.22729008"
+  }
+}

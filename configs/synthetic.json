@@ -1,0 +1,232 @@
+{
+  "study_id": "solver-agent-2021",
+  "participant_id": "SYNTHETIC001",
+  "title": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation",
+  "domain": "fruits",
+  "preference_mode": "assigned",
+  "cohort": "default",
+  "first_actor": "human",
+  "output": "text",
+  "seed": 42,
+  "synthetic": true,
+  "instructions": "Study the displayed preferences and negotiate a complete offer before the deadline. Allocation quantities are what you keep.",
+  "surveys": [],
+  "conditions": [
+    {
+      "label": "Solver",
+      "strategy": "solver-2021",
+      "duration_seconds": 600,
+      "domain": "fruits",
+      "practice": false,
+      "output": "text",
+      "output_device": null,
+      "human_profile": {
+        "weights": {
+          "watermelon": 0.4,
+          "banana": 0.3,
+          "orange": 0.2,
+          "apple": 0.1
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.2
+            },
+            {
+              "value": 1,
+              "score": 0.4
+            },
+            {
+              "value": 2,
+              "score": 0.6
+            },
+            {
+              "value": 3,
+              "score": 0.8
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.2
+            },
+            {
+              "value": 1,
+              "score": 0.4
+            },
+            {
+              "value": 2,
+              "score": 0.6
+            },
+            {
+              "value": 3,
+              "score": 0.8
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.2
+            },
+            {
+              "value": 1,
+              "score": 0.4
+            },
+            {
+              "value": 2,
+              "score": 0.6
+            },
+            {
+              "value": 3,
+              "score": 0.8
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.2
+            },
+            {
+              "value": 1,
+              "score": 0.4
+            },
+            {
+              "value": 2,
+              "score": 0.6
+            },
+            {
+              "value": 3,
+              "score": 0.8
+            },
+            {
+              "value": 4,
+              "score": 1.0
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "synthetic-rank-linear-paired-v1"
+      },
+      "agent_profile": {
+        "weights": {
+          "watermelon": 0.3,
+          "banana": 0.4,
+          "orange": 0.1,
+          "apple": 0.2
+        },
+        "scores": {
+          "watermelon": [
+            {
+              "value": 0,
+              "score": 0.8
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            },
+            {
+              "value": 2,
+              "score": 0.2
+            },
+            {
+              "value": 3,
+              "score": 0.4
+            },
+            {
+              "value": 4,
+              "score": 0.6
+            }
+          ],
+          "banana": [
+            {
+              "value": 0,
+              "score": 0.8
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            },
+            {
+              "value": 2,
+              "score": 0.2
+            },
+            {
+              "value": 3,
+              "score": 0.4
+            },
+            {
+              "value": 4,
+              "score": 0.6
+            }
+          ],
+          "orange": [
+            {
+              "value": 0,
+              "score": 0.8
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            },
+            {
+              "value": 2,
+              "score": 0.2
+            },
+            {
+              "value": 3,
+              "score": 0.4
+            },
+            {
+              "value": 4,
+              "score": 0.6
+            }
+          ],
+          "apple": [
+            {
+              "value": 0,
+              "score": 0.8
+            },
+            {
+              "value": 1,
+              "score": 1.0
+            },
+            {
+              "value": 2,
+              "score": 0.2
+            },
+            {
+              "value": 3,
+              "score": 0.4
+            },
+            {
+              "value": 4,
+              "score": 0.6
+            }
+          ]
+        },
+        "provenance": "assigned",
+        "reservation": 0.0,
+        "conversion": "rank-linear-paired-v1"
+      }
+    }
+  ],
+  "purpose": "demonstration",
+  "citation_ids": [
+    "solver-agent-2021"
+  ],
+  "order": "as_entered"
+}
