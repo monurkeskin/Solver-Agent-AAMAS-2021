@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "name": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation — maintained code companion",
   "version": "2.0.0",
-  "codeRepository": "https://github.com/monurkeskin/solver-agent-2021",
+  "codeRepository": "https://github.com/monurkeskin/Solver-Agent-AAMAS-2021",
   "datePublished": "2026-09-12",
   "license": "https://spdx.org/licenses/GPL-3.0-only.html",
   "author": [
