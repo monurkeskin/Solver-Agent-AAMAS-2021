@@ -1,6 +1,6 @@
 {
   "title": "Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation — maintained code companion",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "upload_type": "software",
   "description": "Maintained research software for Solver Agent: Towards Emotional and Opponent-Aware Agent for Human-Robot Negotiation. Reproducibility scope and source provenance are documented in the repository.",
   "creators": [
@@ -15,6 +15,5 @@
       "relation": "isSupplementTo",
       "scheme": "url"
     }
-  ],
-  "doi": "10.5281/zenodo.22729008"
+  ]
 }

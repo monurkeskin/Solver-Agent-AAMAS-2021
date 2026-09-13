@@ -235,11 +235,18 @@
     "requirements": [
       {
         "id": "evidence-1",
-        "description": "Exact historical experiment commit and full configuration"
+        "description": "Exact historical experiment commit and full configuration",
+        "required_for": "historical-analysis"
       },
       {
         "id": "evidence-2",
-        "description": "Original affect model and observation records"
+        "description": "Affect model and preprocessing configuration required for this protocol",
+        "required_for": "execution"
+      },
+      {
+        "id": "evidence-2-records",
+        "description": "Historical affect observation records from the original experiment",
+        "required_for": "historical-analysis"
       }
     ],
     "configuration_sha256": "9bd27053c5ace8e06942df06ae88cf1a7e75ba6172b38e193af28554b8c73172"
