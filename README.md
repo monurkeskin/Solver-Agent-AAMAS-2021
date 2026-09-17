@@ -5,6 +5,7 @@ Mehmet Onur Keskin · Umut Çakan · Reyhan Aydoğan
 [Paper](https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1557.pdf) · [Explore the method](METHOD.md) · [Try the code](#try-it-yourself) · [Study guide](docs/protocol.md) · [Citation](#cite-the-paper)
 
 [![Tests](https://github.com/monurkeskin/Solver-Agent-AAMAS-2021/actions/workflows/tests.yml/badge.svg)](https://github.com/monurkeskin/Solver-Agent-AAMAS-2021/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/monurkeskin/Solver-Agent-AAMAS-2021/branch/main/graph/badge.svg)](https://codecov.io/gh/monurkeskin/Solver-Agent-AAMAS-2021)
 
 How should a negotiating robot respond when a person looks frustrated, but keeps
 making demanding offers? **Solver combines emotional feedback with evidence from
